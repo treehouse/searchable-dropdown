@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.container {
+    border-radius: 50px;
+    transition: all .2s ease;
+}
+.container.active {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.menu {
+    opacity: 0;
+    pointer-events: none;
+    top: 50%;
+    transition: all .2s ease;
+}
+.menu.active {
+    opacity: 1;
+    pointer-events: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    top: 100%;
+}
